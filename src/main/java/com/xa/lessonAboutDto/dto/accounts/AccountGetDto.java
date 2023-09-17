@@ -1,5 +1,6 @@
 package com.xa.lessonAboutDto.dto.accounts;
 
+import com.xa.lessonAboutDto.etity.Accounts;
 import com.xa.lessonAboutDto.etity.Photo;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,7 +11,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AccountGetDto {
+public class AccountGetDto extends Accounts {
 
     private Long id;
     private String name;
