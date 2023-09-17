@@ -26,15 +26,15 @@ public class AccountsService {
 
         Accounts result = repository.save(account);
 
-         return new AccountGetDto(
+        return new AccountGetDto(
                 result.getId(),
                 result.getName(),
                 result.getPhoneNumber(),
                 result.getPhoto()
-                );
+        );
     }
 
-    public AccountGetDto update(AccountUpdateDto dto){
+    public AccountGetDto update(AccountUpdateDto dto) {
 
         Optional<Accounts> byId = repository.findById(dto.getId());
 

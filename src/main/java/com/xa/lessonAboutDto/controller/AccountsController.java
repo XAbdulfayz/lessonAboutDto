@@ -17,6 +17,8 @@ public class AccountsController {
         this.service = service;
     }
 
+
+
     @PutMapping("update/")
     public Accounts put(@RequestBody AccountUpdateDto AccountUpdateDto) {
         return service.update(AccountUpdateDto);
